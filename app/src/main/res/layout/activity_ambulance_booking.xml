@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+<TextView
+    android:textSize="18sp"
+    android:id="@+id/thetext"
+    android:layout_margin="10dp"
+    android:textColor="@color/black"
+    android:background="#68FFEA"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_marginEnd="9dp"
+        android:background="@drawable/curve"
+        android:backgroundTint="#68FFEA"
+        android:layout_marginStart="9dp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+        <ImageView
+            android:id="@+id/time1"
+            android:src="@drawable/timing"
+            android:padding="10dp"
+            android:tint="@color/black"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            tools:ignore="UseAppTint" />
+        <TextView
+            android:id="@+id/timeselect"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text="Time"
+            android:padding="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout
+    style="@style/edittext"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/realeditext"
+            android:hint="Estimated Hours"
+            android:id="@+id/estimatedho"
+            android:backgroundTint="#68FFEA"
+            tools:ignore="HardcodedText" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/edittext"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/realeditext"
+            android:id="@+id/froms"
+            android:hint="From"
+            android:backgroundTint="#68FFEA"
+            tools:ignore="HardcodedText" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/edittext"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/realeditext"
+            android:id="@+id/to"
+            android:hint="To"
+            android:backgroundTint="#68FFEA"
+            tools:ignore="HardcodedText" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <androidx.appcompat.widget.AppCompatButton
+style="@style/btn"
+        android:backgroundTint="#68FFEA"
+        android:text="Submit"
+        android:textColor="@color/black"
+        tools:ignore="HardcodedText" />
+</LinearLayout>

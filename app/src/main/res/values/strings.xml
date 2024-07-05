@@ -1,0 +1,68 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Jeevandaan</string>
+    <string name="apikey" tools:ignore="TypographyDashes">AIzaSyC4x7ohHCQGjafTUqb-MAVT3-11XgULOSQ</string>
+
+    <style name="edittext">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="boxStrokeColor">#000</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+        <item name="android:layout_height">55dp</item>
+    </style>
+
+    <style name="realeditext">
+        <item name="android:textColorHint">#fff</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:inputType">textEmailAddress</item>
+        <item name="android:backgroundTint">#0ADDC9</item>
+        <item name="android:background">@drawable/curve</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="btn">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">150dp</item>
+        <item name="android:backgroundTint">@color/teal_200</item>
+        <item name="android:background">@drawable/curve</item>
+        <item name="android:layout_marginTop">50dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:clickable">true</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+
+    <style name="card">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="cardElevation">9dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="cardCornerRadius">12dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="cardimage">
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">125dp</item>
+    </style>
+
+    <style name="cardtext">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <string name="title_activity_user_ambulance">UserAmbulance</string>
+</resources>

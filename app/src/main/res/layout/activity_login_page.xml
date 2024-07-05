@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+       android:layout_width="match_parent"
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFF"
+    tools:context=".LoginPage"
+       android:layout_height="match_parent" >
+
+    <ImageView
+        android:src="@drawable/ambulance"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"/>
+    <TextView
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:text="Welcom to Jeevandaan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        app:tabSelectedTextColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:focusableInTouchMode="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:tabBackground="@drawable/selectable"
+        app:tabIndicator="@color/teal_200"
+        app:tabRippleColor="#88B4E4D7"
+        app:tabTextColor="#000"
+        android:background="@drawable/curve"
+        android:backgroundTint="#fff"
+
+        android:layout_marginBottom="10dp"
+        app:tabIndicatorFullWidth="false" />
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

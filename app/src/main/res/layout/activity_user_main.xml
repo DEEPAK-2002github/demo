@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".User.UserMainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#68FFEA"
+        android:paddingTop="55dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:paddingStart="15sp"
+            android:id="@+id/names"
+            android:paddingTop="15sp"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textSize="29sp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText,RtlSymmetry" />
+        <TextView
+            android:paddingStart="15sp"
+            android:id="@+id/welcome"
+            android:text="Welcome Name!!"
+            android:textColor="@color/black"
+            android:paddingBottom="5dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText,RtlSymmetry" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_marginTop="90dp"
+        android:layout_height="190dp">
+        <androidx.cardview.widget.CardView
+    style="@style/card"
+            android:id="@+id/nearme"
+            >
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@drawable/curve"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/placeholder"
+                   style="@style/cardimage"
+                    tools:ignore="ContentDescription" />
+                <TextView
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:text="Near by you"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+     <View
+         android:layout_width="19dp"
+         android:layout_height="match_parent"/>
+        <androidx.cardview.widget.CardView
+            style="@style/card"
+            >
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@drawable/curve"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/user"
+                style="@style/cardimage"
+                />
+            <TextView
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:text="Profile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="HardcodedText" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="175dp"
+        android:layout_height="145dp"
+        app:cardCornerRadius="12dp"
+        style="@style/card"
+        android:id="@+id/logout"
+        android:layout_weight="0"
+        android:layout_gravity="center"
+        tools:ignore="InefficientWeight">
+        <LinearLayout
+            android:background="@drawable/curve"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                style="@style/cardimage"
+                android:layout_height="110dp"
+                android:padding="10dp"
+                android:src="@drawable/logout" />
+            <TextView
+                android:gravity="center"
+                android:text="Logout"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

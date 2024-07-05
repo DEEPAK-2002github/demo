@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.AddAmbulance">
+    <ImageView
+        android:src="@drawable/ambulance"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+    <TextView
+        android:text="Add Ambulance"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_height="55dp"
+        style="@style/edittext"
+        android:layout_marginTop="5dp">
+        <com.google.android.material.textfield.TextInputEditText
+           style="@style/realeditext"
+            android:id="@+id/dname"
+            android:hint="Driver Name"
+            tools:ignore="HardcodedText" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="5dp"
+        style="@style/edittext">
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/realeditext"
+            android:hint="Driver Address"
+            android:id="@+id/daddress"
+            tools:ignore="HardcodedText" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="5dp"
+        style="@style/edittext">
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/realeditext"
+            android:hint="Driver License Number"
+            android:id="@+id/licennum"
+            tools:ignore="HardcodedText" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="5dp"
+        style="@style/edittext">
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/realeditext"
+            android:hint="Driver Age"
+            android:maxLength="2"
+            android:id="@+id/age"
+            android:inputType="number"
+            tools:ignore="HardcodedText" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="5dp"
+        style="@style/edittext">
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/realeditext"
+            android:hint="Hospital Name"
+            android:id="@+id/hname"
+            tools:ignore="HardcodedText" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="5dp"
+        style="@style/edittext">
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/realeditext"
+            android:id="@+id/haddress"
+            android:hint="Hospital Address"
+            tools:ignore="HardcodedText" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="5dp"
+        style="@style/edittext">
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/realeditext"
+            android:hint="Mobile number"
+            android:maxLength="10"
+            android:id="@+id/mobiles"
+            android:inputType="number"
+            tools:ignore="HardcodedText" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="5dp"
+        style="@style/edittext">
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/realeditext"
+            android:hint="Email-Id"
+            android:id="@+id/emails"
+            android:inputType="textEmailAddress"
+            tools:ignore="HardcodedText" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="5dp"
+        style="@style/edittext">
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/realeditext"
+            android:hint="Password"
+            android:id="@+id/pass"
+            android:inputType="textEmailAddress"
+            tools:ignore="HardcodedText" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <androidx.appcompat.widget.AppCompatButton
+   style="@style/btn"
+        android:id="@+id/addbtn"
+        android:layout_marginTop="10dp"
+        android:text="Add"
+        tools:ignore="HardcodedText" />
+</LinearLayout>
